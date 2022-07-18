@@ -5,27 +5,17 @@ const PORT = process.env.PORT || 5000 //3.Setting port
 const hostname = "localhost"
 
 //4.Create Route: http://localhost:5000/
-app.get('/',(req,res)=>{
+app.get('/', (req, res) => {
     //res.status(200).send("Express")
     res.status(200).json(
-    {
-        id: '101',
-        user:'Mark',
-        level: 'admin'
-    }
-)
+        {
+            id: '101',
+            user: 'Mark',
+            level: 'admin'
+        }
+    )
 })
 
-app.listen(PORT,()=>{//Make the server listen no port 5000
+app.listen(PORT, () => { //5.Make the server listen on port 5000
     console.log(`Server running at http://${hostname}:${PORT}`)
 })
-
-
-
-
-
-
-
-
-
-
