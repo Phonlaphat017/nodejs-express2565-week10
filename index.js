@@ -8,7 +8,8 @@ const hostname = "localhost"
 app.get('/',(req,res)=>{
     //res.status(200).send("Express")
     res.status(200).json(
-        {id: '101',
+    {
+        id: '101',
         user:'Mark',
         level: 'admin'
     }
